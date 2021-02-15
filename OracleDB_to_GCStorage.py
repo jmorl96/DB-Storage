@@ -30,10 +30,6 @@ encoding = 'UTF-8' # encoding of the database
 dsn_tns = cx_Oracle.makedsn(host, port, sid)
 orcl = cx_Oracle.connect(user = user, password= password, encoding = encoding, dsn=dsn_tns)
 
-
-
-curs = orcl.cursor()
-
 printHeader = True # Include table headers
 
 
